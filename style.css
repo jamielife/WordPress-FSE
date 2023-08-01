@@ -6,3 +6,21 @@ Version: 0.0.1
 
 /* Adobe Font */
 @import url("https://use.typekit.net/imp2jke.css");
+
+/* sidebar tweaks */
+.sidebar form input, .sidebar form button{
+    height: 40px;
+    padding: 8px;
+}
+
+/* single blog post meta alignment */
+.post-meta{
+    line-height: 0;
+}
+
+/* Fix for single column order  on mobile */
+@media only screen and (max-width: 788px) {
+    .flex-reverse-order{
+        flex-direction: column-reverse;
+    }   
+}

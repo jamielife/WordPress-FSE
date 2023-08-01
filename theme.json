@@ -22,6 +22,16 @@
                     "slug": "theme-white",
                     "color": "#f7f7f7",
                     "name": "White"
+                },
+                {
+                    "slug": "theme-melon-green",
+                    "color": "#c8f286",
+                    "name": "Melon Pan - Green"
+                },
+                {
+                    "slug": "theme-melon-yellow",
+                    "color": "#fcef63",
+                    "name": "Melon Pan - Yellow"
                 }
             ]
         },
@@ -150,17 +160,40 @@
                     "fontWeight": "800",
                     "lineHeight": "var(--wp--custom--line-height-small)"
                 }
-            }                                                           
+            },
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--theme-black)"
+                },
+                "typography": {
+                    "textDecoration" : "none"
+                },
+                ":hover": {
+                    "typography": {
+                        "textDecoration": "underline"
+                    },
+                    "color": {
+                        "text": "var(--wp--preset--color--theme-melon-green)"
+                    }
+                }
+            },
+            "button": {
+                "color": {
+                    "background": "var(--wp--preset--color--theme-melon-green)",
+                    "text": "var(--wp--preset--color--theme-black)"
+                },
+				":hover": {
+                    "color": {
+                        "background": "var(--wp--preset--color--theme-melon-yellow)"
+                    }
+                }
+			}            
         },
         "blocks": {
             "core/button": {
                 "border": {
                     "color": "currentColor",
                     "radius": "0"
-                },
-                "color": {
-                    "background": "var(--wp--preset--color--theme-black)",
-                    "text": "var(--wp--preset--color--theme-white)"
                 },
                 "spacing": {
                     "padding": {
@@ -176,5 +209,27 @@
                 }
             }
         }
-    }
+    },
+    "templateParts": [
+        {
+            "name": "header",
+            "area": "header",
+            "title": "Header"
+        },
+        {
+            "name": "footer",
+            "area": "footer",
+            "title": "Footer"
+        }        
+    ],
+    "customTemplates": [
+        {
+            "name": "Home",
+            "postTypes": [
+                "page"
+            ],
+            "title": "Home"
+
+        }
+    ]
 }

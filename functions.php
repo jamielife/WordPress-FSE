@@ -36,3 +36,9 @@ if ( ! function_exists( 'wp_fse_styles' ) ) :
     }
 endif; 
 add_action( 'wp_enqueue_scripts', 'wp_fse_styles' );
+
+//Customize excerpt
+function excerpt_theme_length($length){
+	return 30;
+}
+add_filter('excerpt_length', 'excerpt_theme_length');
