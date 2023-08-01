@@ -18,6 +18,9 @@ Version: 0.0.1
     line-height: 0;
 }
 
+/* some margin to the hamburger menu */
+.custom-theme-nav button{ margin-right: 7px; }
+
 /* Fix for single column order  on mobile */
 @media only screen and (max-width: 788px) {
     .flex-reverse-order{
